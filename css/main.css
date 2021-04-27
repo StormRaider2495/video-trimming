@@ -1,0 +1,150 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  display: flex;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle at 50% 20%, #FF9800 0%, #FF5722 100%);
+  padding: 0 16px;
+  color: white;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.goodfile {
+  background-image: radial-gradient(circle at 50% 20%, #bdde97 0%, #1cca23 100%);
+}
+
+body.badfile {
+ background-image: radial-gradient(circle at 50% 20%, #fd7a70 0%, #e20909 100%);
+}
+
+body.loading #loading {
+  display: block;
+}
+
+body #loading {
+  display: none;
+}
+
+body.loading input[type=file] {
+  display: none;
+}
+
+body.loading label {
+  display: none;
+}
+
+input[type=file] {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#working {
+  display: none;
+}
+
+#selecttime {
+  display: none;
+}
+
+body.picking #selecttime {
+  display: block;
+}
+
+body.picking #working {
+  display: none;
+}
+
+body.working #selecttime {
+  display: block;
+}
+
+body.picking #output, body.working #output {
+  display: flex;
+}
+
+body.picking label[for=videoFile], body.working label[for=videoFile] {
+  display: none;
+}
+
+body.picking #videoFile, body.working #videoFile {
+  display: none;
+}
+
+#startTime.editing {
+  outline: solid #1cca23 1px;
+}
+
+#endTime.editing {
+  outline: solid #1cca23 1px;
+}
+
+#output {
+  display: none;
+  position: relative;
+  margin: 1em;
+  height: 70%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.2em;
+  width: 100%;
+  box-shadow: inset 1px 1px 1px 1px #e25e34;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#output h2 {
+  font-size: 2rem;
+}
+
+#output div {
+  max-width: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+#preview {
+  position: relative;
+  height: 100%;
+}
+
+#preview video {
+  width: 100%;
+  height: 100%;
+}
+
+#videoControls {
+  width: initial !important;
+  max-width: initial !important;
+}
+
+#outputlog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#log {
+  font-size: 1rem;
+  overflow: auto;
+  height: 100%;
+  text-align: left;
+  flex-grow: 1;
+}

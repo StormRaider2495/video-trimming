@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Video Trimming using JS</title>
+    <meta name="description" content="Quickly crop and trim your videos online">
+    <meta name="viewport" content="width=device-width">
+    <!-- Latest compiled and minified CSS of Bootstrap -->
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="theme-color" content="#FF9800">
+    <link rel="manifest" href="./manifest.json">
+    <script src="./scripts/ffmpeg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/comlinkjs@3.0.2/umd/comlink.js"></script>
+  </head>
+
+  <body draggable class="loading">
+    <p id="loading">Loading the system... wait one moment</p>
+    <label for="videoFile">Select or drop a video file</label>
+    <input type="file" name="videoFile" id="videoFile" accept="video/*">
+    <div id="selecttime">Pick a start time and an end time.</div>
+    <div id="working">Encoding video. It may be some time.</div>
+    <div id="output">
+      <div id="preview">
+        <video id="inputVideo" controls preload=auto></video>
+        <div id="videoControls">
+          <input type="text" class="form-control" id="startTime" value="00:00:00">
+          <input type="text" class="form-control" id="endTime" value="00:00:01">
+          <button id="trim" class="btn btn-default">Trim</button>
+        </div>
+      </div>
+      <div id="outputlog">
+        <pre id="log"></pre>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
