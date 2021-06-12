@@ -3,3 +3,5 @@ timecode.
 
 
 Using ffmpeg.js v3.1.9001 for the video trimming purpose. Vendorised the required and them kept in the scripts folder.
+
+Hosted URL - https://stormraider2495.github.io/video-trimming/
