@@ -76,7 +76,8 @@ let ffmpegEncoder = function (encoderArgs, files) {
             .concat(['-i', files[0].name])
             .concat((startTime !== undefined) ? ['-ss', startTime] : [])
             .concat((endTime !== undefined) ? ['-to', endTime] : [])
-            .concat(['output.mp4']);
+            .concat(['output.mp4'])
+            .concat(["-preset ultrafast"]);
 
         console.log(args);
 
