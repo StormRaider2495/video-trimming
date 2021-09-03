@@ -76,9 +76,9 @@ let ffmpegEncoder = function (encoderArgs, files) {
             .concat((startTime !== undefined) ? ['-ss', startTime] : [])
             .concat(['-i', files[0].name])
             .concat((endTime !== undefined) ? ['-t', endTime] : [])
-            .concat(['output.mp4'])
-            .concat(['-c:v copy'])
-            .concat(['-c:a aac']);
+            .concat(['-c:v', 'copy'])
+            .concat(['-c:a', 'aac'])
+            .concat(['output.mp4']);
 
         console.log(args);
 
