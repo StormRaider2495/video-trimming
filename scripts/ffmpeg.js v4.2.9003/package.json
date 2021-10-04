@@ -1,0 +1,58 @@
+{
+  "_from": "ffmpeg.js",
+  "_id": "ffmpeg.js@4.2.9003",
+  "_inBundle": false,
+  "_integrity": "sha512-l1JBr8HwnnJEaSwg5p8K3Ifbom8O2IDHsZp7UVyr6MzQ7gc32tt/2apoOuQAr/j76c+uDOjla799VSsBnRvSTg==",
+  "_location": "/ffmpeg.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ffmpeg.js",
+    "name": "ffmpeg.js",
+    "escapedName": "ffmpeg.js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ffmpeg.js/-/ffmpeg.js-4.2.9003.tgz",
+  "_shasum": "3a97d53c35eaee5c27cd7d0edf7c57ccec4a059d",
+  "_spec": "ffmpeg.js",
+  "_where": "D:\\Others\\Video Editing\\videocut",
+  "author": {
+    "name": "Kagami Hiiragi"
+  },
+  "bugs": {
+    "url": "https://github.com/Kagami/ffmpeg.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Port of FFmpeg with Emscripten",
+  "devDependencies": {
+    "chai": "latest",
+    "mocha": "latest"
+  },
+  "ethereum": "0x3ec9a73ba55a22f020226be8b4496304d12be0e1",
+  "homepage": "https://github.com/Kagami/ffmpeg.js#readme",
+  "keywords": [
+    "asm.js",
+    "emscripten",
+    "ffmpeg",
+    "video"
+  ],
+  "license": "(LGPL-2.1+ OR GPL-2.0)",
+  "main": "ffmpeg-webm.js",
+  "name": "ffmpeg.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kagami/ffmpeg.js.git"
+  },
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "version": "4.2.9003"
+}

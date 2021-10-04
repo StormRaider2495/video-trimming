@@ -3,7 +3,7 @@ let ffmpegEncoder = function (encoderArgs, files) {
     let stderr = "";
 
     // Hosted ffmpeg worker file in a different domain
-    const webWorkerURL = "https://raw.githubusercontent.com/StormRaider2495/video-trimming/master/scripts/ffmpeg-worker-mp4.js";
+    const webWorkerURL = "https://raw.githubusercontent.com/StormRaider2495/video-trimming/master/scripts/ffmpeg.js v4.2.9003/ffmpeg-worker-mp4.js";
     let worker;
     fetch(webWorkerURL)
         .then(res => res.blob()) // Gets the response and returns it as a blob

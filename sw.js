@@ -29,7 +29,8 @@ self.addEventListener('install', (event) => {
                 './css/main.css',
                 './scripts/ffmpeg.js',
                 './scripts/ffmpeg-worker-mp4.js',
-                "https://raw.githubusercontent.com/StormRaider2495/video-trimming/master/scripts/ffmpeg-worker-mp4.js"
+                "https://raw.githubusercontent.com/StormRaider2495/video-trimming/master/scripts/ffmpeg-worker-mp4.js",
+                "https://raw.githubusercontent.com/StormRaider2495/video-trimming/master/scripts/ffmpeg.js v4.2.9003/ffmpeg-worker-mp4.js",
             ])
                 .then(() => self.skipWaiting());
         })

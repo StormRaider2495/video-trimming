@@ -1,4 +1,4 @@
-// Used for caching the script files 
+// Used for caching the script files
 if (navigator.serviceWorker) {
     navigator.serviceWorker.register('./sw.js')
         .then(() => {
